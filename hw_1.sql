@@ -34,7 +34,7 @@ SELECT * FROM cars limit 5 offset 0;
 SELECT * FROM cars ORDER BY id DESC limit 5;
 
 -- найти среднее арифметическое цен машин модели KIA
-SELECT avg(price) as avg_price FROM cars WHERE model="kia";
+SELECT AVG(price) as avg_price FROM cars WHERE model="kia";
 
 -- найти среднее арифметическое цен каждой машины
 SELECT avg(price) as avg_price, model as brand FROM cars GROUP BY model;
